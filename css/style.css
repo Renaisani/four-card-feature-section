@@ -1,0 +1,152 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fafafa;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+footer {
+  top: 90%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: .5fr 1.5fr;
+      grid-template-rows: .5fr 1.5fr;
+      grid-template-areas: "title" "card-box";
+}
+
+.card-box {
+  margin-top: 25px;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card-box;
+  display: -ms-grid;
+  display: grid;
+  width: 950px;
+  height: 460px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "supervisor team calculator" "supervisor karma calculator";
+}
+
+.card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 300px;
+  height: 200px;
+  padding-right: 30px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  background-color: white;
+  border-radius: 6px;
+  border-top: 4px;
+  border-top-style: solid;
+  -webkit-box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 1px 30px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 13px;
+  color: #afaeb2;
+}
+
+.card .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.title-area {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+  text-align: center;
+  width: 450px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.title-area .header-thin {
+  color: #555167;
+  font-weight: 200;
+  margin: 0;
+}
+
+.title-area .header-thick {
+  margin: 0;
+}
+
+.title-area p {
+  color: #afaeb2;
+  font-size: 13px;
+}
+
+.supervisor {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: supervisor;
+  border-top-color: #45d3d3;
+}
+
+.team {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: team;
+  border-top-color: #ea5353;
+}
+
+.karma {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: karma;
+  border-top-color: #fcaf4a;
+}
+
+.calculator {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: calculator;
+  border-top-color: #549ef2;
+}
+/*# sourceMappingURL=style.css.map */
